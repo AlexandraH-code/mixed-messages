@@ -1,4 +1,4 @@
-/* Grundläggande inställningar */
+/* Reset and base styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,90 +6,88 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Bakgrund med rymdkänsla */
+/* Space-themed gradient background */
 body {
-  background: linear-gradient(135deg, #0f0c20 0%, #15102a 50%, #241442 100%);
-  color: #f0edf6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+    background: linear-gradient(135deg, #0f0c20 0%, #15102a 50%, #241442 100%);
+    color: #f0edf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-/* Huvudkortet för generatorn */
+/* Glassmorphism card container */
 .wrapper {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 40px 30px;
-  border-radius: 24px;
-  width: 100%;
-  max-width: 500px;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-/* Rubrik och dekorativ emoji */
+/* Typography styles */
 h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #ffe600;
-  text-shadow: 0 0 10px rgba(255, 230, 0, 0.3);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffe600;
+    text-shadow: 0 0 10px rgba(255, 230, 0, 0.3);
 }
 
 .subtitle {
-  font-size: 0.9rem;
-  color: #a29bfe;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    font-size: 0.9rem;
+    color: #a29bfe;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Visningsrutan för meddelandet */
+/* Message box container */
 .message-box {
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px dashed rgba(162, 155, 254, 0.3);
-  padding: 25px;
-  border-radius: 16px;
-  min-height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px dashed rgba(162, 155, 254, 0.3);
+    padding: 25px;
+    border-radius: 16px;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 #output {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: #ffffff;
-  transition: opacity 0.3s ease;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #ffffff;
 }
 
-/* Den interaktiva knappen */
+/* Interactive neon button */
 .btn {
-  background: linear-gradient(90deg, #6c5ce7, #a29bfe);
-  color: white;
-  border: none;
-  padding: 16px 32px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
-  transition: all 0.2s ease;
+    background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+    transition: all 0.2s ease;
     width: 100%;
 }
 
-/* Knappeffekter vid interaktion */
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.6);
-  background: linear-gradient(90deg, #7866ff, #b3adff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.6);
+    background: linear-gradient(90deg, #7866ff, #b3adff);
 }
 
 .btn:active {
-  transform: translateY(1px);
+    transform: translateY(1px);
 }
